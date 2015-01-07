@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Add a quote!
+	</title>
+</head>
+<body>
+	<center>
+	<form action="addquote" method="get" id="addform">
+		Database: 
+		<select id="nameselect" name="name" form="addform" autocomplete="off" onChange="if(document.getElementById('nameselect').value == 'new'){window.location = '/adddb';};">
+%NAME_OPTIONS%
+		<option value="new">New...</option>
+		</select>
+		</br>
+		
+		Quote: <input type="text" name="quote" autocomplete="off">
+		</br>
+		<input type="submit">
+	</form>
+	</center>
+</body>
+</html
